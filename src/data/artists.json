@@ -1,0 +1,56 @@
+[
+  {
+    "id": "theweeknd",
+    "name": "The Weeknd",
+    "image": "/images/theweeknd.jpg",
+    "bio": "Canadian singer and songwriter.",
+    "songs": [
+      {
+        "title": "Blinding Lights",
+        "file": "/songs/blindinglights.mp3"
+      }
+    ]
+  },
+  {
+    "id": "billie",
+    "name": "Billie Eilish",
+    "image": "/images/billie.jpg",
+    "bio": "American singer and songwriter.",
+    "songs": [
+      {
+        "title": "Bad Guy",
+        "file": "/songs/badguy.mp3"
+      }
+    ]
+  },
+  {
+    "id": "postmalone",
+    "name": "Post Malone",
+    "image": "/images/postmalone.jpg",
+    "bio": "American rapper, singer and songwriter known for blending hip‑hop, pop and rock.",
+    "songs": [
+      { "title": "Circles", "file": "/songs/circles.mp3" },
+      { "title": "Rockstar", "file": "/songs/rockstar.mp3" }
+    ]
+  },
+  {
+    "id": "popsmoke",
+    "name": "Pop Smoke",
+    "image": "/images/popsmoke.jpg",
+    "bio": "American rapper and a key figure in Brooklyn drill music.",
+    "songs": [
+      { "title": "Dior", "file": "/songs/dior.mp3" },
+      { "title": "Mood Swings", "file": "/songs/mood_swings.mp3" }
+    ]
+  },
+  {
+    "id": "eminem",
+    "name": "Eminem",
+    "image": "/images/eminem.jpg",
+    "bio": "American rapper, songwriter and record producer.",
+    "songs": [
+      { "title": "Lose Yourself", "file": "/songs/lose_yourself.mp3" },
+      { "title": "Without Me", "file": "/songs/without_me.mp3" }
+    ]
+  }
+]

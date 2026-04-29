@@ -1,0 +1,50 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ظرف اصلی که کارت‌ها رو کنار هم می‌چینه */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* استایل هر کارت هنرمند */
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; // حذف خط زیر لینک
+  color: white;
+  transition: transform 0.2s;
+
+  img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; // گرد کردن کامل تصویر
+    object-fit: cover; // جلوگیری از دفرمه شدن عکس
+    border: 2px solid #333;
+  }
+
+  h3 {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #efefef;
+  }
+
+  &:hover {
+    transform: scale(1.05); // بزرگ شدن ملایم موقع نگه داشتن موس
+    img {
+      border-color: #1db954; // سبز شبیه اسپاتیفای در هاور
+    }
+  }
+}
