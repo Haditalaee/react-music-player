@@ -8,7 +8,7 @@ import MusicPlayer from "./components/MusicPlayer";
 function App() {
   return (
     <PlayerProvider>
-      <BrowserRouter>
+       <BrowserRouter basename="/react-music-player">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/artist/:id" element={<ArtistPage />} />
