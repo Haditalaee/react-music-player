@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { usePlayer } from "../context/PlayerContext";
 import artists from "../data/artists.json";
 
+const BASE_URL = "/react-music-player";
+
 export default function ArtistPage() {
   const { id } = useParams();
   const { playSong } = usePlayer();
@@ -12,7 +14,6 @@ export default function ArtistPage() {
 
   if (!artist) return <h2>هنرمند پیدا نشد</h2>;
 
-  // ✅ ساخت playlist یک بار
   const playlist = artist.songs.map((s) => ({
     title: s.title,
     file: s.file,
@@ -21,7 +22,7 @@ export default function ArtistPage() {
 
   return (
     <div className="artist-page">
-      <img src={artist.image} alt={artist.name} width="300" />
+      <img src={`${BASE_URL}${artist.image}`} alt={artist.name} width="300" />
       <h1>{artist.name}</h1>
       <p>{artist.bio}</p>
 
